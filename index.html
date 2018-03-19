@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+</head>
+<body>
+    
+            <div>
+                    这个问题涉及到安全区域，iOS11 和先前版本的不同之处在于，webview 比较重视安全区域了。这意味着，如果给页面元素设置 top: 0, 它会渲染在屏幕顶部的44px之下，也就是状态栏下面。如果给页面元素设置 bottom: 0, 它会渲染在屏幕底部的34px之上，也就是底部安全区域上面。
+                </div>
+                
+    <script>
+       console.log( getComputedStyle(document.getElementsByTagName("div")[0],undefined).fontSize)
+    </script>
+</body>
+</html>
